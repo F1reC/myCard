@@ -6,7 +6,8 @@
 
 https://icard.edgeone.app/
 
-<img width="1708" alt="image" src="https://github.com/user-attachments/assets/7c989757-010a-4eeb-af38-b9757fe62a46" />
+<img width="1708" alt="image" src="https://github.com/user-attachments/assets/64396040-8a19-499f-9f68-aa3138a13d88" />
+
 
 
 ## 功能特点

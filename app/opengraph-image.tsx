@@ -6,6 +6,9 @@ export const size = {
   height: 630,
 }
 
+// 添加强制静态生成的配置
+export const dynamic = "force-static"
+
 export default function Image() {
   return new ImageResponse(
     <div

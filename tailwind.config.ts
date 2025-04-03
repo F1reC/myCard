@@ -92,5 +92,13 @@ const config: Config = {
   	}
   },
   plugins: [require("tailwindcss-animate")],
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
+  corePlugins: {
+    backdropOpacity: true,
+    backdropSaturate: true,
+    backdropBlur: true,
+  }
 };
 export default config;

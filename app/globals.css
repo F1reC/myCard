@@ -3,12 +3,18 @@
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  
+  .apple-card {
+    @apply rounded-2xl bg-white/80 backdrop-blur-xl backdrop-saturate-150 shadow-lg border border-white/20;
   }
 }
 
@@ -38,7 +44,7 @@ body {
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem;
+    --radius: 0.75rem;
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
@@ -85,12 +91,19 @@ body {
 
   :root {
     --foreground-rgb: 0, 0, 0;
-    --background-rgb: 255, 255, 255;
+    --background-rgb: 248, 248, 248;
+    --background-start: 255, 255, 255;
+    --background-end: 245, 245, 247;
   }
 
   body {
     color: rgb(var(--foreground-rgb));
-    background: rgb(var(--background-rgb));
+    background: linear-gradient(
+      to bottom,
+      rgb(var(--background-start)),
+      rgb(var(--background-end))
+    );
+    min-height: 100vh;
   }
 }
 
@@ -114,5 +127,24 @@ body {
 
 .prose p {
   @apply mb-4;
+}
+
+/* 苹果风格滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
 }
 

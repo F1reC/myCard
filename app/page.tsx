@@ -193,23 +193,45 @@ export default function Home() {
 
       <section id="work" className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <Link href="https://mp.weixin.qq.com/s/TbrsGlP2BywHLoMh_pwJ6Q" className="group">
-            <div className="relative overflow-hidden rounded-2xl bg-[#07C160]/90 backdrop-blur-xl backdrop-saturate-150 shadow-lg h-60 flex flex-col items-center justify-center p-6 transition-all duration-300 group-hover:scale-[1.02] group-hover:shadow-xl border border-white/10">
-              <div className="absolute inset-0 bg-gradient-to-b from-white/10 to-transparent opacity-30"></div>
-              <svg viewBox="0 0 24 24" className="w-16 h-16 text-white mb-4 relative z-10" fill="currentColor">
-                <path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.328.328 0 0 0 .165-.054l1.885-1.097a.724.724 0 0 1 .6-.047c.954.272 1.98.422 3.055.422 4.801 0 8.691-3.289 8.691-7.342 0-4.055-4.005-7.343-8.691-7.343zm-5.24 7.343c0-.424.343-.778.76-.778.418 0 .76.354.76.778a.77.77 0 0 1-.76.779.77.77 0 0 1-.76-.779zm4.76 0c0-.424.343-.778.76-.778.418 0 .76.354.76.778a.77.77 0 0 1-.76.779.77.77 0 0 1-.76-.779z" />
-                <path d="M22.93 15.596c1.832-1.346 3.002-3.337 3.002-5.55 0-4.054-3.89-7.342-8.69-7.342-4.8 0-8.691 3.288-8.691 7.342 0 4.055 3.89 7.343 8.69 7.343 1.076 0 2.102-.15 3.057-.422a.724.724 0 0 1 .6.047l1.885 1.097a.328.328 0 0 0 .165.054c.16 0 .29-.132.29-.295 0-.072-.03-.143-.049-.213l-.39-1.48a.59.59 0 0 1 .213-.665zm-6.99-5.55c0-.424.343-.778.76-.778.418 0 .76.354.76.778a.77.77 0 0 1-.76.779.77.77 0 0 1-.76-.779zm4.76 0c0-.424.343-.778.76-.778.418 0 .76.354.76.778a.77.77 0 0 1-.76.779.77.77 0 0 1-.76-.779z" />
-              </svg>
-              <h3 className="text-white font-medium text-xl relative z-10">公众号</h3>
-            </div>
-          </Link>
+          <Popover>
+            <PopoverTrigger>
+              <div className="group cursor-pointer">
+                <div className="relative overflow-hidden rounded-2xl bg-[#07C160]/90 backdrop-blur-xl backdrop-saturate-150 shadow-lg h-60 flex flex-col items-center justify-center p-6 transition-all duration-300 group-hover:scale-[1.02] group-hover:shadow-xl border border-white/10">
+                  <div className="absolute inset-0 bg-gradient-to-b from-white/10 to-transparent opacity-30"></div>
+                  <Image 
+                    src="/wechat-official.svg" 
+                    alt="公众号" 
+                    width={64} 
+                    height={64}
+                    className="text-white mb-4 relative z-10"
+                  />
+                  <h3 className="text-white font-medium text-xl relative z-10">公众号</h3>
+                </div>
+              </div>
+            </PopoverTrigger>
+            <PopoverContent className="w-80">
+              <div className="flex flex-col items-center">
+                <Image 
+                  src="/wechat-official-qr.png" 
+                  alt="公众号二维码" 
+                  width={250} 
+                  height={250} 
+                  className="rounded-lg" 
+                />
+                <p className="mt-2 text-sm text-center">扫码关注公众号</p>
+              </div>
+            </PopoverContent>
+          </Popover>
           <Link href="https://www.xiaohongshu.com/user/profile/644e0f6f000000000f004b36" className="group">
             <div className="relative overflow-hidden rounded-2xl bg-[#FE2C55]/90 backdrop-blur-xl backdrop-saturate-150 shadow-lg h-60 flex flex-col items-center justify-center p-6 transition-all duration-300 group-hover:scale-[1.02] group-hover:shadow-xl border border-white/10">
               <div className="absolute inset-0 bg-gradient-to-b from-white/10 to-transparent opacity-30"></div>
-              <svg viewBox="0 0 24 24" className="w-16 h-16 text-white mb-4 relative z-10" fill="currentColor">
-                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 21.6c-5.302 0-9.6-4.298-9.6-9.6S6.698 2.4 12 2.4s9.6 4.298 9.6 9.6-4.298 9.6-9.6 9.6z" />
-                <path d="M15.6 7.2H8.4c-.66 0-1.2.54-1.2 1.2v7.2c0 .66.54 1.2 1.2 1.2h7.2c.66 0 1.2-.54 1.2-1.2V8.4c0-.66-.54-1.2-1.2-1.2zm-3.6 7.2c-1.323 0-2.4-1.077-2.4-2.4s1.077-2.4 2.4-2.4 2.4 1.077 2.4 2.4-1.077 2.4-2.4 2.4z" />
-              </svg>
+              <Image 
+                src="/XiaohongshuLOGO.svg" 
+                alt="小红书" 
+                width={64} 
+                height={64}
+                className="mb-4 relative z-10"
+              />
               <h3 className="text-white font-medium text-xl relative z-10">小红书</h3>
             </div>
           </Link>
@@ -234,7 +256,7 @@ export default function Home() {
         </div>
       </section>
 
-       <section id="about" className="container mx-auto px-4 py-16">
+       {/* <section id="about" className="container mx-auto px-4 py-16">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold mb-6">关于我</h2>
           <div className="prose">
@@ -247,7 +269,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-      </section> 
+      </section>  */}
 
       <footer className="container mx-auto px-4 py-6 flex justify-center items-center text-sm text-gray-500">
         <p>Made with ❤️ © 2025</p>

@@ -142,6 +142,7 @@ export default function Home() {
                   alt="微信" 
                   width={24} 
                   height={24} 
+                  className="w-6 h-6"
                 />
                 <span className="sr-only">微信</span>
               </div>
@@ -151,11 +152,11 @@ export default function Home() {
                 <Image 
                   src="/image.png" 
                   alt="微信二维码" 
-                  width={250} 
-                  height={250} 
+                  width={220} 
+                  height={220} 
                   className="rounded-lg" 
                 />
-                <p className="mt-2 text-sm text-center">扫码添加微信</p>
+                <p className="mt-2 text-sm text-center">长按图片添加微信</p>
               </div>
             </PopoverContent>
           </Popover>
@@ -214,11 +215,11 @@ export default function Home() {
                 <Image 
                   src="/wechat-official-qr.png" 
                   alt="公众号二维码" 
-                  width={250} 
-                  height={250} 
+                  width={270} 
+                  height={270} 
                   className="rounded-lg" 
                 />
-                <p className="mt-2 text-sm text-center">扫码关注公众号</p>
+                <p className="mt-2 text-sm text-center">长按图片查看公众号</p>
               </div>
             </PopoverContent>
           </Popover>

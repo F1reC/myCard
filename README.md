@@ -1,10 +1,13 @@
-# 个人电子名片
+<img width="1708" alt="image" src="https://github.com/user-attachments/assets/18f71764-96f8-423b-8537-b73032ca3685" /># 个人电子名片
 
 这是一个使用Next.js和Tailwind CSS构建的个人电子名片网站，展示个人信息和社交媒体链接。
 
 ## 预览
 
-![网站预览](https://github.com/F1reC/myCard/raw/main/preview.png)
+https://icard.edgeone.app/
+
+<img width="1708" alt="image" src="https://github.com/user-attachments/assets/7c989757-010a-4eeb-af38-b9757fe62a46" />
+
 
 ## 功能特点
 

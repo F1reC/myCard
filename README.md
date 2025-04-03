@@ -1,4 +1,4 @@
-<img width="1708" alt="image" src="https://github.com/user-attachments/assets/18f71764-96f8-423b-8537-b73032ca3685" /># 个人电子名片
+# 个人电子名片
 
 这是一个使用Next.js和Tailwind CSS构建的个人电子名片网站，展示个人信息和社交媒体链接。
 

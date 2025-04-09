@@ -18,7 +18,7 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto flex flex-col items-center">
           <div className="relative w-32 h-32 mb-8 group">
             <Image 
-              src="/profile.jpeg" 
+              src="/me.png" 
               alt="Profile" 
               fill
               className="rounded-full object-cover shadow-lg transition-transform duration-300 group-hover:scale-105"

@@ -25,7 +25,7 @@ export default function AboutPage() {
             />
           </div>
           
-          <h1 className="text-4xl font-bold mb-6 text-gray-900">韩熔</h1>
+          <h1 className="text-4xl font-bold mb-6 text-gray-900 font-serif tracking-wide">韩熔</h1>
           
           <div className="prose text-center max-w-2xl">
             <p className="mb-6 text-gray-700 leading-relaxed text-lg font-serif tracking-wide transition-all duration-300 hover:tracking-wider">

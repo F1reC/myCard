@@ -114,7 +114,16 @@ export default function Home() {
     <main className="min-h-screen flex flex-col">
       <header className="container mx-auto px-4 py-6 flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <Image src="/profile.jpeg" alt="Profile" width={50} height={50} className="rounded-full object-cover" />
+          <Link href="/about" className="group relative">
+            <Image 
+              src="/profile.jpeg" 
+              alt="Profile" 
+              width={50} 
+              height={50} 
+              className="rounded-full object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+            <span className="absolute inset-0 rounded-full bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300"></span>
+          </Link>
         </div>
       </header>
 

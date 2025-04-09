@@ -87,7 +87,7 @@ export default function AboutPage() {
                 <div className="space-y-6">
                   <div>
                     <h3 className="font-medium text-lg mb-1 text-gray-800 font-serif tracking-wide">快手 | 2025.03-至今</h3>
-                    <p className="text-sm text-gray-600 font-serif tracking-wide leading-snug">AI 产品经理实习生，参与企业内部 AI 工具产品设计</p>
+                    <p className="text-sm text-gray-600 font-serif tracking-wide leading-snug">AI 产品经理实习生，企业内部 AI 工具产品设计</p>
                   </div>
                   <div>
                     <h3 className="font-medium text-lg mb-1 text-gray-800 font-serif tracking-wide">神经火花 | 2023.07-至今</h3>
@@ -95,7 +95,7 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <h3 className="font-medium text-lg mb-1 text-gray-800 font-serif tracking-wide">中国中车 | 2023.05-2024.3</h3>
-                    <p className="text-sm text-gray-600 font-serif tracking-wide leading-snug">算法实习生，参与时序预测算法的调优和模型量化</p>
+                    <p className="text-sm text-gray-600 font-serif tracking-wide leading-snug">算法实习生，时序预测算法的调优和模型量化</p>
                   </div>
                 </div>
               </div>
